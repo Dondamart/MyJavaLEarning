@@ -42,6 +42,14 @@ public class StringsMethods {
         Boolean comparisson2= str3.equalsIgnoreCase(str4);
         System.out.println("Are these strings the same? " + comparisson2);
         
+        //Return position of a letter
+        String word= "España";
+        int whatIndex= word.indexOf("ñ");
+        System.out.println("The position of the letter 'ñ' is: "+whatIndex);
+        
+        //extract a char from index using charAt
+        
+        
     }
     
 }
