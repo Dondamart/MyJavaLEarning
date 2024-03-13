@@ -49,7 +49,28 @@ public class StringsMethods {
         
         //extract a char from index using charAt
         
+        char extractLetter= "España".charAt(4);
+        System.out.println("In the position '4' the letter is: "+ extractLetter);
         
+        //Check if a string contains a specific value
+        
+        String messaj= "How are you doing?";
+        
+        boolean hasWord= messaj.contains("you");
+        System.out.println(messaj+ "  Contains the word 'you'? : " + hasWord);
+        
+        //Check if a string starts/ends with a specific value
+        
+        String favourite= "My favourite language is Java";
+        
+        Boolean checking=favourite.startsWith("My");
+        Boolean checking2=favourite.endsWith("Python");
+        
+        System.out.println("The sentence: '" +favourite+"' "+ "starts with 'My' and ends with 'Python'?: " + checking + " " + checking2);
+        
+        //The string is empty?
+        
+        System.out.println("Is this string  empty?  " + "".isEmpty());
     }
     
 }
