@@ -35,8 +35,7 @@ public class StringsMethods {
         System.out.println("Are these strings the same? " + comparisson);
         
         
-        //Compare ignoring capital or lowcase
-        
+        //Compare ignoring capital or lowcase    
         String str3="This string";
         String str4="this String";
         Boolean comparisson2= str3.equalsIgnoreCase(str4);
@@ -47,20 +46,17 @@ public class StringsMethods {
         int whatIndex= word.indexOf("ñ");
         System.out.println("The position of the letter 'ñ' is: "+whatIndex);
         
-        //extract a char from index using charAt
-        
+        //extract a char from index using charAt    
         char extractLetter= "España".charAt(4);
         System.out.println("In the position '4' the letter is: "+ extractLetter);
         
-        //Check if a string contains a specific value
-        
+        //Check if a string contains a specific value    
         String messaj= "How are you doing?";
         
         boolean hasWord= messaj.contains("you");
         System.out.println(messaj+ "  Contains the word 'you'? : " + hasWord);
         
-        //Check if a string starts/ends with a specific value
-        
+        //Check if a string starts/ends with a specific value    
         String favourite= "My favourite language is Java";
         
         Boolean checking=favourite.startsWith("My");
@@ -68,9 +64,23 @@ public class StringsMethods {
         
         System.out.println("The sentence: '" +favourite+"' "+ "starts with 'My' and ends with 'Python'?: " + checking + " " + checking2);
         
-        //The string is empty?
-        
+        //The string is empty?    
         System.out.println("Is this string  empty?  " + "".isEmpty());
+        
+        //Replace a text    
+        String stringToReplace= "  Dritzz Do´Urden is an elf  ";
+        String stringReplaced= stringToReplace.replace("elf", "drow");
+        
+        System.out.println(stringReplaced);
+        
+        //Remove blancs
+        String trimmed= stringReplaced.strip();
+        System.out.println(trimmed);
+        
+        //To Upper Case/ Lower Case
+        
+       System.out.println(favourite.toLowerCase()+ " " + favourite.toUpperCase());
+        
     }
     
 }
