@@ -80,7 +80,8 @@ public class StringsMethods {
         //To Upper Case/ Lower Case
         
        System.out.println(favourite.toLowerCase()+ " " + favourite.toUpperCase());
-        
+       
+       
     }
     
 }
